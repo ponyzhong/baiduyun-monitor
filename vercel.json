@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "name": "baiduyun-monitor",
+  "builds": [
+    {
+      "src": "api/monitor.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/monitor",
+      "dest": "/api/monitor.js"
+    }
+  ],
+  "env": {
+    "FEISHU_APP_ID": "cli_a927389a6d38dcbb",
+    "FEISHU_APP_SECRET": "dmuy4cWWJcH7WaSQHmPebfcYUj1z7iI7",
+    "FEISHU_RECEIVE_ID": "ou_99c59002c1476b309d6e1baa7675f465",
+    "FEISHU_RECEIVE_ID_TYPE": "open_id",
+    "BAIDU_SHARE_URL": "https://pan.baidu.com/s/15GmNkLcV0V66awfEDOzSkg?pwd=w8V2",
+    "BAIDU_SHARE_PWD": "w8V2"
+  }
+}
